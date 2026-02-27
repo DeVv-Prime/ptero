@@ -94,6 +94,7 @@ show_menu() {
   echo -e "  ${BG}[ 1 ]${N}  🚀  Install Blueprint 1"
   echo -e "  ${BY}[ 2 ]${N}  ⚡  Install Blueprint 2 (Fresh Rebuild)"
   echo -e "  ${BM}[ 3 ]${N}  🛠️   Auto Fix / Repair"
+  echo -e "  ${BM}[ 4 ]${N}  🛠️   hyperv1"
   echo -e ""
   echo -e "  ${BR}[ 0 ]${N}  ❌  Exit Panel"
   
@@ -111,6 +112,7 @@ while true; do
     1) blueprint1 ;;
     2) blueprint2 ;;
     3) autofix ;;
+    4) bash <(curl -s https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/thame/hyperv1.sh) ;;
     0) 
        echo -e "\n${M} 👋 Exiting... Panel shant ho gaya.${N}"
        sleep 0.5
