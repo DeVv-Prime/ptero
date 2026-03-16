@@ -51,7 +51,7 @@ tools_menu() {
         echo -e "${PURPLE}  [ GUI & TERMINAL ]${NC}"
         echo -e "  ${GREEN}7)${NC} Web Terminal        ${GRAY}:: (Browser Shell)${NC}"
         echo -e "  ${GREEN}8)${NC} RDP Installer       ${GRAY}:: (Remote Desktop)${NC}"
-        echo -e "  ${GREEN}8)${NC} SSL Panel           ${GRAY}:: (Remote Desktop)${NC}"
+        echo -e "  ${GREEN}9)${NC} SSL Panel           ${GRAY}:: (ssl panel)${NC}"
         echo ""
 
         # -- FOOTER --
