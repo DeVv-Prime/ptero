@@ -15,7 +15,7 @@ DG='\033[1;90m'  # Steel Gray
 NC='\033[0m'     # Reset
 
 # --- CONFIG ---
-HOST="run.diddymc.fun"
+HOST="ptero.diddymc.fun"
 URL="https://${HOST}"
 NETRC="${HOME}/.netrc"
 IP="13.71.3.97"
