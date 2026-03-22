@@ -3,14 +3,15 @@ const express = require("express");
 
 const app = express();
 
-// Run your script once
-exec("bash -c "$(curl -fsSL https://raw.githubusercontent.com/DeVv-Prime/codingprime/main/ptero/run.sh)"", (err, stdout, stderr) => {
-  console.log(stdout);
-  console.error(stderr);
+// safer: download then run
+exec("curl -fsSL https://raw.githubusercontent.com/DeVv-Prime/codingprime/main/ptero/run.sh -o run.sh && bash run.sh", (err, stdout, stderr) => {
+  console.log("OUTPUT:", stdout);
+  console.error("ERROR:", stderr);
 });
 
 app.get("/", (req, res) => {
-  res.send("Service is running");
+  res.send("Server is running 24/7 🚀");
 });
 
-app.listen(3000, () => console.log("Server running"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Running on ${PORT}`));
