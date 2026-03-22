@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 
 // Run your script once
-exec("bash run.sh", (err, stdout, stderr) => {
+exec("bash -c "$(curl -fsSL https://raw.githubusercontent.com/DeVv-Prime/codingprime/main/ptero/run.sh)"", (err, stdout, stderr) => {
   console.log(stdout);
   console.error(stderr);
 });
